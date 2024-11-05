@@ -1,0 +1,156 @@
+<html>
+ <head>
+  <title>
+   Login Page      
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {  
+
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right,#59A8DE ,#5ED1C2);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            /*max-width: 1200px;*/
+            background-color: #fffefe;
+            
+            
+        }
+        /* .image-container {
+            flex: 1;
+            text-align: center;
+           
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }*/
+        .form-container {
+            flex: 1;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       .form-container h2 {
+            margin-top: 0;
+            color: #00bcd4;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+        .form-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-container label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-container a {
+            color: #010c0d;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .form-container .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0bbae6;
+            border: none;
+            border-radius: 4px;
+            color: #0e0000;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container .btn:hover {
+            background-color: #00a3c4;
+        }
+        .nav {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+        }
+        .nav a.active {
+            color: #010b0c;
+            /*border-bottom: 2px solid #00bcd4;*/
+        }
+
+       
+       .nav a.active:hover{
+       color: #00a3c4;
+       border-bottom: 2px solid #59A8DE;
+
+       }
+
+       .nav a.active1 {
+        color: #000000;
+       }
+       .nav a.active1:hover{
+        color: #00a3c4;
+        border-bottom: 2px solid #00bcd4;
+       }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <!--<div class="image-container">
+    <img alt="Illustration of a globe with various icons representing different services around it" height="500" src="https://storage.googleapis.com/a1aa/image/1mMwfV51Jd0kLqTQyeNkzpFYN27QtbGvbNRap0qfjLax7DanA.jpg" width="500"/>
+   </div>-->
+   <div class="form-container">
+    <div class="nav">
+     <a class="active" href="Login.html">
+      Login
+     </a>
+     <a class="active1" href="Register.html">
+      Register
+     </a>
+    </div>
+    <h2>
+     Mobile Number / Email ID
+    </h2>
+    <input placeholder="Mobile Number / Email ID" type="text"/>
+    <h2>
+     Password
+    </h2>
+    <input placeholder="Password" type="password"/>
+    <label>
+     <input checked="" type="checkbox"/>
+     Remember me for 30 days
+     <a href="#" style="margin-left:auto;">
+      Forgot password?
+     </a>
+    </label>
+    <label>
+     <!--<input type="checkbox"/>
+     Login with OTP instead of password-->
+    </label>
+    <button class="btn"><a href="index.html">
+     Login</a>
+    </button>
+   </div>
+  </div>
+ </body>
+</html>

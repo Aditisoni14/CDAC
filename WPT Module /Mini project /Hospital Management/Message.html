@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Messaging</title>
+    <link rel="stylesheet" href="Message.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Secure Messaging</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Message Your Healthcare Provider</h2>
+            <p>Use our secure messaging feature to communicate with your healthcare provider. Send questions or get quick responses to your inquiries.</p>
+            <textarea id="messageInput" rows="4" placeholder="Type your message here..."></textarea>
+            <button id="sendMessageButton">Send Message</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Telehealth Services</p>
+    </footer>
+
+    <script>
+        document.getElementById('sendMessageButton').addEventListener('click', function() {
+            const message = document.getElementById('messageInput').value;
+            // Placeholder for message sending functionality
+            alert('Sending message');
+            // Here you would call the messaging API to send the message
+        });
+    </script>
+</body>
+</html>
