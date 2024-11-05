@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+           <li> <a href="#" class="active" >Home</a></li>
+           <li> <a href="#" >Tours</a></li>
+           <li> <a href="#" >Explore</a></li>
+           <li> <a href="#" >About</a></li>
+           <li> <a href="#" class="ctn" >Contact</a></li>
+            
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>The World Is Yours</h2>
+            <div class="line"></div>
+            <h1>To Explore</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>     
+    </header>
+
+
+    
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.jpg" alt="">
+                <h2>Everest Camp Trek</h2>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/img3.jpg" alt="">
+                <h2>Walking Holiday</h2>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="explore">
+        <div class ="explore-content">
+        <h1>EXPLORE THE NATURE</h1>
+        <p>Towering mountains and lush forests
+            to serene rivers and vibrant oceans, the natural world offers endless opportunities for exploration 
+            and discovery. Engaging with nature not only enhances our understanding of the environment but also fosters 
+            a deep appreciation for the beauty and complexity of life. </p>
+           <a herf ="#"  class="ctn">Learn More</a>
+        </div>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>     
+    
+</body>
+</html>

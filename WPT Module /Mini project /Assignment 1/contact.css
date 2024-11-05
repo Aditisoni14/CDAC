@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 15%;
+    background: linear-gradient(#4b2102,#f5f5f5,#4b2102);
+
+    width: 100vw;
+    
+    background-image: url('./img/watch5.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+
+    
+
+
+}
+.container {
+    display: flex;
+    width: 800px;
+   box-shadow: 0 0 20px rgba(14, 0, 0, 0.1);
+    border-radius: 10%;
+    
+}
+.left {
+    background-color: #cb956f;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    width: 40%;
+    background: transparent;
+    
+}
+.left h2 {
+    margin-top: 0;
+}
+.left p {
+    margin: 10px 0;
+}
+.right {
+    background-color: rgb(247, 241, 218);
+    padding: 30px;
+    width: 60%;
+    background: transparent;
+}
+.right h2 {
+    margin-top: 0;
+}
+.right form {
+    display: flex;
+    flex-direction: column;
+}
+.right form input, .right form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    font-size: 14px;
+}
+.right form button{
+    padding: 10px;
+    background:white;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 14px;
+    left: 50%;
+    right: 50%;
+   
+
+}
+ button :hover{
+    background: gray;
+    color: white;
+    transition: background 0.4s;
+}
+

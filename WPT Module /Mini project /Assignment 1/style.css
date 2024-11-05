@@ -1,0 +1,195 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+   
+   text-decoration: none;
+color: aliceblue;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    margin-top: -900px;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease;
+    flex-direction: column;
+}
+.mobile-menu{
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+}
+.nav-links li{
+    margin: 0 30px;
+    font-weight:bold;
+    text-decoration: underline;
+    font-size: 20px;
+    color: whitesmoke;
+
+}
+.active{
+    color: rgb(7, 0, 0);
+    text-decoration: underline;
+  font-weight:bold;
+
+}
+body , html{
+    overflow-x: hidden;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/main2.jpg');
+    background-position: bottom;
+    background-size: cover;
+    align-items: flex-end;
+ display: flex;
+ justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 7vmin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.line{
+    width: 200px;
+    height: 4px;
+    background: rgb(240, 240, 94);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 8vmin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.ctn{
+    padding: 9px 15px;
+    background: rgb(240, 240, 94);
+    border-radius: 30px;
+    color:rgb(0, 8, 8);
+    
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+
+}
+.row .col img{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 80%;
+   
+     
+}
+.events .row{
+    margin-top: 50px;
+
+}
+
+.row .col h2{
+    font-size: 3vmin;
+    color: rgb(95, 110, 110);
+    margin: 20px auto;
+   align-items: center;
+
+}
+.events .ctn{
+    margin-top: 30px;
+
+}
+
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/wall6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width: 60%;
+    padding: 50%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+.explore-content h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+.explore-content p{
+    color: white;
+
+}
+
+
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(134, 89, 176);
+    }
+    .nav-links li{
+        margin: 30px auto;
+
+    }
+}
